@@ -15,6 +15,20 @@
 		8E39E0FD23642E2000736923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E39E0FB23642E2000736923 /* LaunchScreen.storyboard */; };
 		8E39E10823642E2000736923 /* UralsibHakatonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E10723642E2000736923 /* UralsibHakatonTests.swift */; };
 		8E39E11323642E2000736923 /* UralsibHakatonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E11223642E2000736923 /* UralsibHakatonUITests.swift */; };
+		8E39E1282364305800736923 /* OmnesCyrillic-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E39E1212364305800736923 /* OmnesCyrillic-SemiBold.otf */; };
+		8E39E1292364305800736923 /* OmnesCyrillicCnd-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E39E1222364305800736923 /* OmnesCyrillicCnd-Regular.otf */; };
+		8E39E12A2364305800736923 /* OmnesCyrillic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E39E1232364305800736923 /* OmnesCyrillic-Regular.otf */; };
+		8E39E12B2364305800736923 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E1242364305800736923 /* Fonts.swift */; };
+		8E39E12C2364305800736923 /* OmnesCyrillicCnd-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E39E1252364305800736923 /* OmnesCyrillicCnd-SemiBold.otf */; };
+		8E39E12D2364305800736923 /* OmnesCyrillic-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E39E1262364305800736923 /* OmnesCyrillic-Medium.otf */; };
+		8E39E12E2364305800736923 /* OmnesCyrillic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E39E1272364305800736923 /* OmnesCyrillic-Bold.otf */; };
+		8E39E182236485D600736923 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E181236485D600736923 /* Colors.swift */; };
+		8E39E1842364958600736923 /* SelectTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E1832364958600736923 /* SelectTypeView.swift */; };
+		8E39E1872364981800736923 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E1862364981800736923 /* Types.swift */; };
+		8E39E18A2364998C00736923 /* SelectedCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E1892364998C00736923 /* SelectedCard.swift */; };
+		8E39E18C23649C7100736923 /* SelectOther.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E18B23649C7100736923 /* SelectOther.swift */; };
+		8E39E18E2364B4BD00736923 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E18D2364B4BC00736923 /* Background.swift */; };
+		8E39E1922364B55700736923 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E1912364B55700736923 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +63,20 @@
 		8E39E10E23642E2000736923 /* UralsibHakatonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UralsibHakatonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E39E11223642E2000736923 /* UralsibHakatonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UralsibHakatonUITests.swift; sourceTree = "<group>"; };
 		8E39E11423642E2000736923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E39E1212364305800736923 /* OmnesCyrillic-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OmnesCyrillic-SemiBold.otf"; sourceTree = "<group>"; };
+		8E39E1222364305800736923 /* OmnesCyrillicCnd-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OmnesCyrillicCnd-Regular.otf"; sourceTree = "<group>"; };
+		8E39E1232364305800736923 /* OmnesCyrillic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OmnesCyrillic-Regular.otf"; sourceTree = "<group>"; };
+		8E39E1242364305800736923 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		8E39E1252364305800736923 /* OmnesCyrillicCnd-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OmnesCyrillicCnd-SemiBold.otf"; sourceTree = "<group>"; };
+		8E39E1262364305800736923 /* OmnesCyrillic-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OmnesCyrillic-Medium.otf"; sourceTree = "<group>"; };
+		8E39E1272364305800736923 /* OmnesCyrillic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OmnesCyrillic-Bold.otf"; sourceTree = "<group>"; };
+		8E39E181236485D600736923 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8E39E1832364958600736923 /* SelectTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypeView.swift; sourceTree = "<group>"; };
+		8E39E1862364981800736923 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		8E39E1892364998C00736923 /* SelectedCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCard.swift; sourceTree = "<group>"; };
+		8E39E18B23649C7100736923 /* SelectOther.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOther.swift; sourceTree = "<group>"; };
+		8E39E18D2364B4BC00736923 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		8E39E1912364B55700736923 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +127,19 @@
 		8E39E0EF23642E1C00736923 /* UralsibHakaton */ = {
 			isa = PBXGroup;
 			children = (
+				8E39E18F2364B54000736923 /* Extensions */,
+				8E39E1882364997B00736923 /* SupportingViews */,
+				8E39E1852364980B00736923 /* Models */,
+				8E39E1202364303800736923 /* Fonts */,
 				8E39E0F023642E1C00736923 /* AppDelegate.swift */,
 				8E39E0F223642E1C00736923 /* SceneDelegate.swift */,
+				8E39E1832364958600736923 /* SelectTypeView.swift */,
 				8E39E0F423642E1C00736923 /* ContentView.swift */,
 				8E39E0F623642E2000736923 /* Assets.xcassets */,
 				8E39E0FB23642E2000736923 /* LaunchScreen.storyboard */,
 				8E39E0FE23642E2000736923 /* Info.plist */,
 				8E39E0F823642E2000736923 /* Preview Content */,
+				8E39E181236485D600736923 /* Colors.swift */,
 			);
 			path = UralsibHakaton;
 			sourceTree = "<group>";
@@ -134,6 +168,46 @@
 				8E39E11423642E2000736923 /* Info.plist */,
 			);
 			path = UralsibHakatonUITests;
+			sourceTree = "<group>";
+		};
+		8E39E1202364303800736923 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8E39E1242364305800736923 /* Fonts.swift */,
+				8E39E1272364305800736923 /* OmnesCyrillic-Bold.otf */,
+				8E39E1262364305800736923 /* OmnesCyrillic-Medium.otf */,
+				8E39E1232364305800736923 /* OmnesCyrillic-Regular.otf */,
+				8E39E1212364305800736923 /* OmnesCyrillic-SemiBold.otf */,
+				8E39E1222364305800736923 /* OmnesCyrillicCnd-Regular.otf */,
+				8E39E1252364305800736923 /* OmnesCyrillicCnd-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8E39E1852364980B00736923 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E39E1862364981800736923 /* Types.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E39E1882364997B00736923 /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				8E39E1892364998C00736923 /* SelectedCard.swift */,
+				8E39E18B23649C7100736923 /* SelectOther.swift */,
+				8E39E18D2364B4BC00736923 /* Background.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		8E39E18F2364B54000736923 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E39E1912364B55700736923 /* Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +314,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E39E12C2364305800736923 /* OmnesCyrillicCnd-SemiBold.otf in Resources */,
 				8E39E0FD23642E2000736923 /* LaunchScreen.storyboard in Resources */,
+				8E39E12D2364305800736923 /* OmnesCyrillic-Medium.otf in Resources */,
 				8E39E0FA23642E2000736923 /* Preview Assets.xcassets in Resources */,
+				8E39E12A2364305800736923 /* OmnesCyrillic-Regular.otf in Resources */,
+				8E39E12E2364305800736923 /* OmnesCyrillic-Bold.otf in Resources */,
+				8E39E1292364305800736923 /* OmnesCyrillicCnd-Regular.otf in Resources */,
+				8E39E1282364305800736923 /* OmnesCyrillic-SemiBold.otf in Resources */,
 				8E39E0F723642E2000736923 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,9 +347,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E39E18A2364998C00736923 /* SelectedCard.swift in Sources */,
+				8E39E12B2364305800736923 /* Fonts.swift in Sources */,
+				8E39E1842364958600736923 /* SelectTypeView.swift in Sources */,
+				8E39E182236485D600736923 /* Colors.swift in Sources */,
+				8E39E1922364B55700736923 /* Extension.swift in Sources */,
+				8E39E18C23649C7100736923 /* SelectOther.swift in Sources */,
+				8E39E1872364981800736923 /* Types.swift in Sources */,
 				8E39E0F123642E1C00736923 /* AppDelegate.swift in Sources */,
 				8E39E0F323642E1C00736923 /* SceneDelegate.swift in Sources */,
 				8E39E0F523642E1C00736923 /* ContentView.swift in Sources */,
+				8E39E18E2364B4BD00736923 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
