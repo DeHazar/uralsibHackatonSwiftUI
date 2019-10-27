@@ -14,6 +14,8 @@
 		8E0124272364F15D00BAEF1E /* question.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E0124262364F15D00BAEF1E /* question.json */; };
 		8E0124292364F67600BAEF1E /* CategorySelectInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0124282364F67600BAEF1E /* CategorySelectInformation.swift */; };
 		8E01242B2364F73500BAEF1E /* CategoryRadioBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01242A2364F73500BAEF1E /* CategoryRadioBoxView.swift */; };
+		8E012430236524D800BAEF1E /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E01242F236524D800BAEF1E /* OfferView.swift */; };
+		8E0124322365525D00BAEF1E /* OfferSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0124312365525D00BAEF1E /* OfferSecondView.swift */; };
 		8E39E0F123642E1C00736923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E0F023642E1C00736923 /* AppDelegate.swift */; };
 		8E39E0F323642E1C00736923 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E0F223642E1C00736923 /* SceneDelegate.swift */; };
 		8E39E0F523642E1C00736923 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E39E0F423642E1C00736923 /* ContentView.swift */; };
@@ -66,6 +68,8 @@
 		8E0124262364F15D00BAEF1E /* question.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = question.json; sourceTree = "<group>"; };
 		8E0124282364F67600BAEF1E /* CategorySelectInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectInformation.swift; sourceTree = "<group>"; };
 		8E01242A2364F73500BAEF1E /* CategoryRadioBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRadioBoxView.swift; sourceTree = "<group>"; };
+		8E01242F236524D800BAEF1E /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
+		8E0124312365525D00BAEF1E /* OfferSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferSecondView.swift; sourceTree = "<group>"; };
 		8E39E0ED23642E1C00736923 /* UralsibHakaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UralsibHakaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E39E0F023642E1C00736923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E39E0F223642E1C00736923 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +138,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		8E01242E236524C300BAEF1E /* YourOffer */ = {
+			isa = PBXGroup;
+			children = (
+				8E01242F236524D800BAEF1E /* OfferView.swift */,
+				8E0124312365525D00BAEF1E /* OfferSecondView.swift */,
+			);
+			path = YourOffer;
+			sourceTree = "<group>";
+		};
 		8E39E0E423642E1C00736923 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +170,7 @@
 		8E39E0EF23642E1C00736923 /* UralsibHakaton */ = {
 			isa = PBXGroup;
 			children = (
+				8E01242E236524C300BAEF1E /* YourOffer */,
 				8E01241F2364EA9100BAEF1E /* Resources */,
 				8E39E1972364CAF800736923 /* Categories */,
 				8E39E18F2364B54000736923 /* Extensions */,
@@ -395,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E39E18A2364998C00736923 /* SelectedCard.swift in Sources */,
+				8E012430236524D800BAEF1E /* OfferView.swift in Sources */,
 				8E39E12B2364305800736923 /* Fonts.swift in Sources */,
 				8E01242B2364F73500BAEF1E /* CategoryRadioBoxView.swift in Sources */,
 				8E39E1842364958600736923 /* SelectTypeView.swift in Sources */,
@@ -412,6 +427,7 @@
 				8E39E0F523642E1C00736923 /* ContentView.swift in Sources */,
 				8E01241E2364E4DC00BAEF1E /* UserData.swift in Sources */,
 				8E39E18E2364B4BD00736923 /* Background.swift in Sources */,
+				8E0124322365525D00BAEF1E /* OfferSecondView.swift in Sources */,
 				8E39E19B2364CB3800736923 /* Category.swift in Sources */,
 				8E01241C2364D97C00BAEF1E /* uralsibLogo.swift in Sources */,
 			);

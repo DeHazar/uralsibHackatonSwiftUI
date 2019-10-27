@@ -21,11 +21,15 @@ struct CategoryRow: View {
         VStack(alignment: .leading) {
             
                 HStack(spacing: 40) {
-                    Circle().frame(width: 28, height: 28).foregroundColor(category.isChecked() || category.id == 0 ? .green : .gray).clipShape(Circle())
+                    Circle().frame(width: 28, height: 28).foregroundColor(userData.categories[index].isChecked() || category.id == 0 ? .green : .gray).clipShape(Circle())
                         .shadow(radius: 1)
                     
                     Text(category.title).font(Fonts.regular(of: 24)).foregroundColor(category.isChecked() || category.id == 0 ? .green : .gray)
 
+                }.onTapGesture {
+                    withAnimation{
+                        self.isShowed.toggle()
+                    }
                 }
             
                 if category.answers.count != 0 && isShowed{
@@ -34,11 +38,7 @@ struct CategoryRow: View {
                 }
             
 
-        }.frame(minWidth: 0,  maxWidth: .infinity, alignment: .leading).padding(20).onTapGesture {
-            withAnimation{
-                self.isShowed.toggle()
-            }
-        }
+        }.frame(minWidth: 0,  maxWidth: .infinity, alignment: .leading).padding(20)
     }
 }
 

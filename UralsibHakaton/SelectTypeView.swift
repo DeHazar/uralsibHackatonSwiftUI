@@ -37,6 +37,8 @@ struct SelectTypeView: View {
                     Text(verbatim: "Калькулятор тарифов").font(Fonts.cond(of: 30)).padding([.top], 30)
                     .foregroundColor(Color.white)
                     
+                    Text("Выберете нужную форму собственности").font(Fonts.cond(of: 18)).padding([.top], 30)
+                    .foregroundColor(Color.white)
                     VStack (spacing: 18){
                         
                         HStack(alignment: .center, spacing: 10) {

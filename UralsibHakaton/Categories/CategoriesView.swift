@@ -14,31 +14,40 @@ struct CategoriesView: View {
     var body: some View {
         List {
             ForEach(userData.categories) { cat in
-                CategoryRow(category: cat).background(Color.white).onTapGesture {
-                    print(cat.id)
-                }
-                
+                CategoryRow(category: cat).background(Color.white)
             }
             
-            if userData.categories.filter({ (cat) -> Bool in
-                cat.isChecked() == false
-            }).count == 0 {
-                Text("Завершить")
-                    .font(Fonts.regular(of: 18))
-                    .foregroundColor(.white)
-                    .padding(20)
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
-            }else {
-                Text("Завершить досрочно").font(Fonts.regular(of: 18))
-                    .foregroundColor(.black)
-                    .padding(20)
-                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .center).overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.black, lineWidth: 1)
-                )
-            }
-
-        }.background(Color.white).onAppear { UITableView.appearance().separatorStyle = .none } .onDisappear { UITableView.appearance().separatorStyle = .singleLine }.navigationBarItems(trailing: uralsibLogo()
+                
+                if userData.categories.filter({ (cat) -> Bool in
+                    cat.isChecked() == false
+                }).count < 5 {
+                    NavigationLink(destination: OfferView()) {
+                                        Text("Завершить")
+                           .font(Fonts.regular(of: 18))
+                           .foregroundColor(.white)
+                           .padding(20)
+                           .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                       .overlay(
+                       RoundedRectangle(cornerRadius: 20)
+                           .stroke(Color.black, lineWidth: 1))
+                       .background(Color.green)
+                    }
+                   
+                }else {
+                    NavigationLink(destination:  OfferSecondView()){
+                        Text("Завершить досрочно").font(Fonts.regular(of: 18))
+                            .foregroundColor(.black)
+                            .padding(20)
+                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .center).overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.black, lineWidth: 1))
+                    }
+                }
+            
+        }.background(Color.white)
+            .onAppear { UITableView.appearance().separatorStyle = .none }
+            .onDisappear { UITableView.appearance().separatorStyle = .singleLine }
+            .navigationBarItems(trailing: uralsibLogo()
             .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 80)
             ))
     }
