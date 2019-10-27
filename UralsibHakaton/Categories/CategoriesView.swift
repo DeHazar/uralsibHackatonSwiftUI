@@ -26,7 +26,8 @@ struct CategoriesView: View {
                            .font(Fonts.regular(of: 18))
                            .foregroundColor(.white)
                            .padding(20)
-                           .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                                            .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                        .cornerRadius(20)
                        .overlay(
                        RoundedRectangle(cornerRadius: 20)
                            .stroke(Color.black, lineWidth: 1))
