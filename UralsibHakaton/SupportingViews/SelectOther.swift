@@ -14,13 +14,13 @@ struct SelectOther: View {
     @State var clicked: Bool = false
     var body: some View {
         VStack (spacing: 20) {
-            SelectedCard(type: type).onTapGesture {
+            SelectedCard(type: type).environmentObject(UserData()).onTapGesture {
                 withAnimation {
                     self.clicked.toggle()
                 }
             }
             if clicked {
-                VStack(alignment: .leading){
+                VStack{
                     TextField("Введите ", text: $searchText).padding(10)
                         .cornerRadius(10)
                         .background(Color(hex: "EEEEEE"))
@@ -29,17 +29,19 @@ struct SelectOther: View {
                         HStack (spacing: 10) {
                             Text("ПАО").underline()
                             Text("Самозанятой").underline()
-                        }
-                        
+                        }.padding(.bottom, 20)
+                        NavigationLink(destination:
+                            CategoriesView()){
                         Text("Далее")
                             .padding([.leading, .trailing], 40)
                             .padding([.top, .bottom], 20)
                             .font(Fonts.regular(of: 18))
                             .foregroundColor(.white)
                             .background(Color.green)
+                        }
                     }
                     .foregroundColor(.gray)
-                    .padding([.leading, .trailing] , 20).transition(.move(edge: .top))
+                    .padding([.leading, .trailing] , 20).transition(.move(edge: .bottom))
                 }
             }
         }

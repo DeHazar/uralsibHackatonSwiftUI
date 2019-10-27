@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var userData: UserData
     
     init() {
         UINavigationBar.appearance().tintColor = .white
@@ -16,25 +17,19 @@ struct ContentView: View {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 25)]
     }
     
-    var uralsibButton: some View {
-          Button(action: { print("taped") }) {
-            Image("logo")
-                .resizable()
-                .frame(width: 200, height: 45, alignment: .center)
-                  .accessibility(label: Text("User Profile"))
-                  .padding(EdgeInsets(top: 0, leading: 100, bottom: 10, trailing: 10))
-          }
-      }
     
     var enterButton: some View {
-        Button(action: { print("Войти") }) {
-            Text("Войти или зарегистрироваться").font(Fonts.regular(of: 18)).foregroundColor(.white)
-        }.frame(width: UIScreen.main.bounds.width - 80, height: 20, alignment: .center)
+        Text("Войти или зарегистрироваться")
+            .font(Fonts.regular(of: 18))
+            .foregroundColor(.white)
+            .padding(20)
+        .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
     }
     
     var mainButton: some View {
-      Text("Получить предложение").font(Fonts.regular(of: 18)).foregroundColor(.white)
-        .frame(width: UIScreen.main.bounds.width - 80, height: 20, alignment: .center)
+        Text("Получить предложение").font(Fonts.regular(of: 18)).foregroundColor(.white)
+            .padding(20)
+        .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
               
     }
     
@@ -60,8 +55,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            ZStack
-                 {
+            ZStack{
                     LinearGradient(gradient: Gradient(colors: [Colors.main(),Colors.additional()]),
                                    startPoint: .top, endPoint: .bottom)
                         .edgesIgnoringSafeArea(.all)
@@ -92,19 +86,20 @@ struct ContentView: View {
                     
                         VStack(spacing: 20) {
                             
-                            enterButton.padding([.top, .bottom], 20)
+                            enterButton
                                 .background(Color.green)
                             
                             NavigationLink(destination: SelectTypeView()) {
-                                mainButton.padding([.top, .bottom], 20)
+                                mainButton
                                 .background(Color.green)
                             }
-                        }
+                        }.padding(20)
                     }
                     .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                     .navigationBarTitle(Text(""),
                                         displayMode: .inline)
-                        .navigationBarItems(leading: uralsibButton)
+                        .navigationBarItems(leading: uralsibLogo()
+                            .padding(EdgeInsets(top: 0, leading: 100, bottom: 10, trailing: 10)))
             }
         }.onTapGesture {
             self.endEditing()

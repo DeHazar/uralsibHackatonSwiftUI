@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct SelectTypeView: View {
+    @EnvironmentObject private var userData: UserData
     
     //MARK: - Parametrs
     var selects: [Types] = [Types(id:0, image: "ip", label: "ИП"),
@@ -16,16 +17,7 @@ struct SelectTypeView: View {
                             Types(id:2, image: "other", label: "Другое")]
     
     //MARK: - Views
-      
-      var uralsibButton: some View {
-            Button(action: { print("taped") }) {
-              Image("logo")
-                  .resizable()
-                  .frame(width: 200, height: 45, alignment: .trailing)
-                    .accessibility(label: Text("User Profile"))
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 90))
-            }
-        }
+
       
    
     
@@ -42,34 +34,41 @@ struct SelectTypeView: View {
 
                     Color.green.frame(width: UIScreen.main.bounds.width, height: 2, alignment: .center)
                     
-                    Text("Калькулятор тарифов").font(Fonts.cond(of: 30))
-                    .padding([.top], 30)
+                    Text(verbatim: "Калькулятор тарифов").font(Fonts.cond(of: 30)).padding([.top], 30)
                     .foregroundColor(Color.white)
+                    
+                    VStack (spacing: 18){
+                        
+                        HStack(alignment: .center, spacing: 10) {
+                            NavigationLink(destination:
+                                CategoriesView()){
+                                    SelectedCard(type: selects[0])
+                            }.buttonStyle(PlainButtonStyle())
+                            
+                            NavigationLink(destination:
+                                CategoriesView()){
+                                    SelectedCard(type: selects[1])
+                            }.buttonStyle(PlainButtonStyle())
+                        }
+                 
+                            SelectOther(type: selects[2])
+                    }.padding([.leading, .trailing], 18 )
+                    
                     Spacer()
                     
                 }
-                
-                VStack (spacing: 18){
-                    
-                    HStack(alignment: .center, spacing: 10) {
-                        SelectedCard(type: selects[0])
-                        
-                        SelectedCard(type: selects[1])
-                    }
-                    
-                    SelectOther(type: selects[2])
-                }.padding([.leading, .trailing], 18 )
 //            }
             .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             .navigationBarTitle(Text(""),
                                 displayMode: .inline)
-                    .navigationBarItems( trailing: uralsibButton)
+                    .navigationBarItems( trailing: uralsibLogo()
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 80)))
         }
     }
 }
 
 struct SelectTypeView_Previews: PreviewProvider {
     static var previews: some View {
-        SelectTypeView()
+        SelectTypeView().environmentObject(UserData())
     }
 }
